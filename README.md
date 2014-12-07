@@ -2,12 +2,12 @@ CodeFights SDK for NodeJS
 
 Instalation:
 ``
-npm install domakas-codefights [-g]
+npm install codefights.net [-g]
 ``
 
 Sample bot:
 ```javascript
-var CodeFights = require('domakas-codefights');
+var CodeFights = require('codefights.net');
 var Area = CodeFights.Area;
 var Move = CodeFights.Move;
 var SDK = CodeFights.SDK;
