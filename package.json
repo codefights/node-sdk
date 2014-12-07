@@ -1,6 +1,6 @@
 {
   "main": "index.js",
-  "name": "domakas-codefights",
+  "name": "codefights.net",
   "description": "Codefights fighter",
   "webkit": {
     "plugin": true
@@ -12,7 +12,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/domakas/nodeSDK.git"
+    "url": "https://github.com/codefights/node-sdk"
   },
   "keywords": [
     "codefights",
@@ -21,7 +21,7 @@
   "author": "domas maksimas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/domakas/nodeSDK/issues"
+    "url": "https://github.com/codefights/node-sdk/issues"
   },
-  "homepage": "https://github.com/domakas/nodeSDK"
+  "homepage": "https://github.com/codefights/node-sdk"
 }
