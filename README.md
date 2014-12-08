@@ -13,19 +13,18 @@ var Move = CodeFights.Move;
 var SDK = CodeFights.SDK;
 
 function MyFighter() {
-  // Do stuff here
+
+  this.makeNextMove = function(opponentsLastMove, myLastScore, opponentsLastScore) {
+    // Do stuff here
+    var move = new Move();
+
+    move.addAttack(Area.NOSE)
+        .addAttack(Area.JAW)
+        .addBlock(Area.NOSE);
+
+    return move;
+  };
 }
-
-MyFighter.prototype.makeNextMove = function(opponentsLastMove, myLastScore, opponentsLastScore) {
-  // Or here
-  var move = new Move();
-
-  move.addAttack(Area.NOSE)
-      .addAttack(Area.JAW)
-      .addBlock(Area.NOSE);
-
-  return move;
-};
 
 module.exports = MyFighter;
 
