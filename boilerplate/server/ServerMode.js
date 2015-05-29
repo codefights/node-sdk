@@ -1,9 +1,9 @@
-var prompt = require('sync-prompt').prompt,
+var readline = require('readline-sync').question,
     Protocol = require('./Protocol'),
     ServerResponse = require('./ServerResponse');
 
 function ServerMode() {
-  this.inStream = prompt;
+  this.inStream = readline;
   this.outStream = console.log;
   this.cancelFlag = false;
 }

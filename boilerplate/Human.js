@@ -1,4 +1,4 @@
-var prompt = require('sync-prompt').prompt,
+var readline = require('readline-sync').question,
     Protocol = require('./server/Protocol'),
     ProtocolException = require('./ProtocolException'),
     GameScoringRules = require('../model/GameScoringRules');
@@ -9,7 +9,7 @@ Human.prototype.makeNextMove = function(oppMove, iScored, oppScored) {
   this.printInstructions();
 
   try {
-    this.input = prompt('(for example, BN BB AN): ');
+    this.input = readline('(for example, BN BB AN): ');
   } catch(Error) {
     console.log('Human error');
   }

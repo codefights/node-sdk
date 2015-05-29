@@ -5,9 +5,9 @@
   "webkit": {
     "plugin": true
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
-    "sync-prompt": "~0.4.1"
+    "readline-sync": "^1.2.17"
   },
   "devDependencies": {},
   "repository": {
