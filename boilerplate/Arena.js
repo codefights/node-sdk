@@ -37,6 +37,14 @@ Arena.prototype.stageFight = function() {
     move1 = fighter1.makeNextMove(f2Move, score1, score2);
     move2 = fighter2.makeNextMove(f1Move, score2, score1);
 
+    if (!GameScoringRules.isMoveLegal(move1)) {
+      throw new ProtocolException('Fighter 1 made illegal move: max 3 things at a time!');
+    }
+
+    if (!GameScoringRules.isMoveLegal(move2)) {
+      throw new ProtocolException('Fighter 2 made illegal move: max 3 things at a time!');
+    }
+
     score1 = GameScoringRules.calculateScore(move1.getAttacks(),
       move2.getBlocks());
 
