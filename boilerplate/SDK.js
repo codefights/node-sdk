@@ -9,8 +9,8 @@ var ProtocolException = require('./ProtocolException'),
     RUN_ON_SERVER_SWITCH = '--fight-on-server',
     USAGE_INSTRUCTIONS =
         FIGHT_HUMAN_SWITCH + '\t\truns your bot against you in interactive mode\n' +
-        FIGHT_BOT_SWITCH + 'boxer\truns your bot against a built-in boxer bot\n' +
-        FIGHT_BOT_SWITCH + 'kickboxer\truns your bot against a built-in kickboxer bot\n' +
+        FIGHT_BOT_SWITCH + ' boxer\truns your bot against a built-in boxer bot\n' +
+        FIGHT_BOT_SWITCH + ' kickboxer\truns your bot against a built-in kickboxer bot\n' +
         RUN_ON_SERVER_SWITCH + '\truns your bot in codefights engine environment';
 
 function SDK(fighter) {
