@@ -3,8 +3,8 @@ var Area = require('./Area');
 function GameScoringRules() {
   this.NOSE_SCORE = 10;
   this.JAW_SCORE = 8;
-  this.GROIN_SCORE = 6;
-  this.BELLY_SCORE = 4;
+  this.BELLY_SCORE = 6;
+  this.GROIN_SCORE = 4;  
   this.LEGS_SCORE = 3;
 
   this.LIFEPOINTS = 150;
