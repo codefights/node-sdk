@@ -1,8 +1,8 @@
 function Area() {
   this.NOSE   = 'NOSE';
   this.JAW    = 'JAW';
-  this.GROIN  = 'GROIN';
   this.BELLY  = 'BELLY';
+  this.GROIN  = 'GROIN';  
   this.LEGS   = 'LEGS';
 }
 
