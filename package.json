@@ -5,7 +5,7 @@
   "webkit": {
     "plugin": true
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "dependencies": {
     "readline-sync": "^1.2.17"
   },
