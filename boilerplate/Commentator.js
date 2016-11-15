@@ -21,11 +21,11 @@ Commentator.prototype.describeRound = function(move1, move2, score1, score2) {
   this.lp1 -= score2;
   this.lp2 -= score1;
 
-  console.log(this.fighter1 + ' vs ' + this.fighter2 + ': ' + this.lp1 + ' to ' + this.lp2);
+  console.log(this.fighter1 + ' vs ' + this.fighter2 + ': ' + this.lp1 + ' to ' + this.lp2 + '\n');
 };
 
 Commentator.prototype.gameOver = function(f1Lifepoints, f2Lifepoints) {
-  console.log('FIGHT OVER\n');
+  console.log('FIGHT OVER');
 
   if(f1Lifepoints > f2Lifepoints) {
     console.log('THE WINNER IS ' + this.fighter1);
