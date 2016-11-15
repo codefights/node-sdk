@@ -6,20 +6,15 @@ var readline = require('readline-sync').question,
 function Human() {}
 
 Human.prototype.makeNextMove = function(oppMove, iScored, oppScored) {
-  this.printInstructions();
 
   try {
-    this.input = readline('(for example, BN BB AN): ');
+    this.input = readline('Make your move by (A)ttacking and (B)locking (N)ose, (J)aw, (B)elly, (G)roin, (L)egs (for example, BN BB AN): ');
   } catch(Error) {
     console.log('Human error');
   }
 
   return this.parseInput(this.input);
 
-};
-
-Human.prototype.printInstructions = function() {
-  console.log('Make your move by (A)ttacking and (B)locking (N)ose, (J)aw, (B)elly, (G)roin, (L)egs');
 };
 
 Human.prototype.parseInput = function(strin) {
