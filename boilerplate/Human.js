@@ -1,4 +1,4 @@
-var readline = require('readline-sync').question,
+var syncprompt = require('syncprompt'),
     Protocol = require('./server/Protocol'),
     ProtocolException = require('./ProtocolException'),
     GameScoringRules = require('../model/GameScoringRules');
@@ -8,7 +8,7 @@ function Human() {}
 Human.prototype.makeNextMove = function(oppMove, iScored, oppScored) {
 
   try {
-    this.input = readline('Make your move by (A)ttacking and (B)locking (N)ose, (J)aw, (B)elly, (G)roin, (L)egs (for example, BN BB AN): ');
+    this.input = syncprompt('Make your move by (A)ttacking and (B)locking (N)ose, (J)aw, (B)elly, (G)roin, (L)egs (for example, BN BB AN): ');
   } catch(Error) {
     console.log('Human error');
   }
